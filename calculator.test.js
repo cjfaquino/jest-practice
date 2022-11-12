@@ -48,4 +48,8 @@ describe('calc object', () => {
   test('only accept numbers and number strings', () => {
     expect(calc.divide('1234', 'test')).toBe('Please only input numbers');
   });
+
+  test('respond with message for no input', () => {
+    expect(calc.add()).toBe('Please input two numbers');
+  });
 });
